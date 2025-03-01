@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="../static/css/Layout.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+    
+<div class="container" id="container">
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Login</h1>
+			<div class="social-container">
+			</div>
+			<span>Infome seu login</span>
+			<input type="email" placeholder="E-mail" />
+			<input type="password" placeholder="Senha" />
+
+			<button>Entrar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>E aí, operário!</h1>
+				<p>Como tá os processos?</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
