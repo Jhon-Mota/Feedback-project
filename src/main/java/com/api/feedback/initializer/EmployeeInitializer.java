@@ -14,7 +14,6 @@ public class EmployeeInitializer implements CommandLineRunner {
     private final EmployeeRepository repository;
     private final PasswordEncoder passwordEncoder;
 
-    // Construtor para injeção de dependências
     public EmployeeInitializer(EmployeeRepository repository, PasswordEncoder passwordEncoder) {
         this.repository = repository;
         this.passwordEncoder = passwordEncoder;
@@ -22,17 +21,12 @@ public class EmployeeInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Cria o objeto Employee com a senha criptografada
-        EmployeeModel employee = new EmployeeModel(1L, "John", "River", "1122", "john@gmail.com", 
-                                                   passwordEncoder.encode("123"), "Aprendicce", "Male");
-
-        // Salva o funcionário no banco de dados
+        
+        EmployeeModel employee = new EmployeeModel(null, "John", "River", "1122 ", "john@gmail.com", 
+                                                        passwordEncoder.encode("123"), "Aprendice", "Male");
+        
         repository.save(employee);
 
-        // Mensagens para confirmação
-        System.out.println("Usuário criado");
-        System.out.println(employee); // Exibe o objeto employee (pode ser útil para debug)
+        System.out.println("Employee created");
     }
-
-    
 }

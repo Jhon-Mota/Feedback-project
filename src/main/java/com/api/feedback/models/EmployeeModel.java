@@ -1,5 +1,6 @@
 package com.api.feedback.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +19,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class EmployeeModel {
     
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -26,8 +28,10 @@ public class EmployeeModel {
 
     private String lastName;
 
+    @Column(unique = true)
     private String registration;
 
+    @Column(unique = true)
     private String email;
 
     private String password;
