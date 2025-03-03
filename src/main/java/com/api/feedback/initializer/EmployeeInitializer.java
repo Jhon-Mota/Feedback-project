@@ -1,6 +1,6 @@
 package com.api.feedback.initializer;
 
-
+/* 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 import com.api.feedback.models.EmployeeModel;
 import com.api.feedback.repository.EmployeeRepository;
 
+*/
+
+/* 
 @Component
 public class EmployeeInitializer implements CommandLineRunner {
 
@@ -30,3 +33,5 @@ public class EmployeeInitializer implements CommandLineRunner {
         System.out.println("Employee created");
     }
 }
+
+*/

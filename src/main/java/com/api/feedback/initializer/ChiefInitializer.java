@@ -1,5 +1,5 @@
 package com.api.feedback.initializer;
-
+/* 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
@@ -7,9 +7,13 @@ import org.springframework.stereotype.Component;
 import com.api.feedback.models.ChiefModel;
 import com.api.feedback.repository.ChiefRepository;
 
+*/
+
+/* 
 @Component
 public class ChiefInitializer implements CommandLineRunner{
 
+    
     private final ChiefRepository repository;
     private final PasswordEncoder passwordEncoder;
 
@@ -33,4 +37,4 @@ public class ChiefInitializer implements CommandLineRunner{
     
 
 
-}
+    */
