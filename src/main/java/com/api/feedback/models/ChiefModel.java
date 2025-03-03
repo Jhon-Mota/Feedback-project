@@ -10,13 +10,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 @Entity
-@Table(name = "employees")
+@Table(name = "chief")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeModel {
+public class ChiefModel {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -36,3 +37,4 @@ public class EmployeeModel {
 
     private String gender;
 }
+
